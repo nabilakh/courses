@@ -36,7 +36,7 @@ export default function Detail() {
         <>
             <div className="relative bg-[#fcf9f1] border-t-[#eeeae2] border-t-2 pb-24">
                 <div className="relative w-full h-60 mt-4">
-                    <Image src={randomWaveIcon} alt="wave" fill />
+                    <Image src={randomWaveIcon} alt="wave" fill unoptimized />
                 </div>
                 <div className="px-11">
                     <div className="flex items-center">
