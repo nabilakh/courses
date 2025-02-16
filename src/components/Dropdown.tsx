@@ -35,7 +35,7 @@ export default function Dropdown(props: { data: { name: string } }) {
       <div>
         <div className="flex items-center justify-between">
           <div className="flex">
-            <Image src="./icons/checked.svg" alt="wave" width={20} height={20} />
+            <Image src="../icons/checked.svg" alt="wave" width={20} height={20} />
             <div className="text-sm font-semibold ml-3">
               &quot;Full refund within 30 days, no questions asked&quot;
               <br />

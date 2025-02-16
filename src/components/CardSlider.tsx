@@ -10,7 +10,7 @@ export default function CardSlider() {
       <div className="flex mt-6">
         <div>
           <Image
-            src="./icons/people8.svg"
+            src="../icons/people8.svg"
             alt="people"
             width={60}
             height={60}
