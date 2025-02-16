@@ -5,17 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const wavesIcons = [
-  "../icons/wave1.svg",
-  "../icons/wave2.svg",
-  "../icons/wave3.svg",
-  "../icons/wave4.svg",
-  "../icons/wave5.svg",
-  "../icons/wave6.svg",
-];
-
-export default function Card(props: { activeTab: string, counter: boolean }) {
-  const { activeTab, counter } = props;
+export default function Card(props: {
+  activeTab: string;
+  counter: boolean;
+  wavesIcons: string[];
+}) {
+  const { activeTab, counter, wavesIcons } = props;
 
   const [courseWaves, setCourseWaves] = useState<string[] | null>(null);
 
@@ -24,7 +19,7 @@ export default function Card(props: { activeTab: string, counter: boolean }) {
       () => wavesIcons[Math.floor(Math.random() * wavesIcons.length)],
     );
     setCourseWaves(randomIcons);
-  }, []);
+  }, [wavesIcons]);
 
   if (!courseWaves) return null;
 
@@ -35,9 +30,11 @@ export default function Card(props: { activeTab: string, counter: boolean }) {
 
   return (
     <>
-      {counter && <div className="text-sm font-bold mt-6 mb-2">
-        COURSES ({filteredCourses.length})
-      </div>}
+      {counter && (
+        <div className="text-sm font-bold mt-6 mb-2">
+          COURSES ({filteredCourses.length})
+        </div>
+      )}
       <div className="flex gap-6 flex-wrap">
         {filteredCourses.map(({ name, description, expert, view, id }, idx) => (
           <Link

@@ -105,7 +105,7 @@ export default function Detail() {
                 <div className="font-serif text-3xl mb-2">
                     Other courses you might like
                 </div>
-                <Card activeTab="advanced" counter={false} />
+                <Card activeTab="advanced" counter={false} wavesIcons={wavesIcons} />
             </div>
             <div className="flex justify-center mt-12">
                 <button className="text-white bg-[#d75555] text-xs font-semibold py-3 px-6 rounded-md">
