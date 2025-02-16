@@ -4,10 +4,11 @@ import { listCourses } from "@/app/dummy";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import wave2 from "../../public/icons/wave2.svg"
 
 const wavesIcons = [
-  "/icons/wave1.svg",
-  "/icons/wave2.svg",
+  "./icons/wave1.svg",
+  wave2,
   "/icons/wave3.svg",
   "/icons/wave4.svg",
   "/icons/wave5.svg",
