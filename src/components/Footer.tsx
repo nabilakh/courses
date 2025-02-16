@@ -18,7 +18,7 @@ export default function Footer() {
     <div className="bg-[#f38165] pt-12 mt-24 px-8 pb-8">
       <div className="flex justify-between pb-8 items-center">
         <Image
-          src="/icons/inflection.svg"
+          src="./icons/inflection.svg"
           alt="inflection"
           width={130}
           height={130}
@@ -26,14 +26,14 @@ export default function Footer() {
         />
         <div className="flex gap-8">
           <Image
-            src="/icons/logo.svg"
+            src="./icons/logo.svg"
             alt="logo"
             width={100}
             height={100}
             className="invert brightness-0"
           />
           <Image
-            src="/icons/people1.svg"
+            src="./icons/people1.svg"
             alt="people1"
             width={100}
             height={100}

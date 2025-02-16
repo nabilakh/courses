@@ -11,12 +11,12 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const wavesIcons = [
-    "/icons/wave1.svg",
-    "/icons/wave2.svg",
-    "/icons/wave3.svg",
-    "/icons/wave4.svg",
-    "/icons/wave5.svg",
-    "/icons/wave6.svg",
+    "./icons/wave1.svg",
+    "./icons/wave2.svg",
+    "./icons/wave3.svg",
+    "./icons/wave4.svg",
+    "./icons/wave5.svg",
+    "./icons/wave6.svg",
 ];
 
 export default function Detail() {

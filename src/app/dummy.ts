@@ -201,37 +201,37 @@ const expertsPeople = [
     name: "Dr. Torie Comeaux Plowden",
     profession: "Assistant Division Director",
     school: "Walter Rand Madical Canter",
-    img: "/icons/people2.svg"
+    img: "./icons/people2.svg"
   },
   {
     name: "Dr. Chantel Cross",
     profession: "Associate Director",
     school: "Johns Horkins School of Medicine",
-    img: "/icons/people3.svg"
+    img: "./icons/people3.svg"
   },
   {
     name: "Dr. Caroline McCaffrey",
     profession: "Laboratory Director",
     school: "NYU School of Medicine",
-    img: "/icons/people4.svg"
+    img: "./icons/people4.svg"
   },
   {
     name: "Dr. Christian M. Becker",
     profession: "Co-Director, Oxford BSCE Endometriosis Centre",
     school: "Associate Professor, Oxford University United Kingdom",
-    img: "/icons/people5.svg"
+    img: "./icons/people5.svg"
   },
   {
     name: "Dr. Eric Forman",
     profession: "Medical Director",
     school: "Columbia University Medical Center",
-    img: "/icons/people6.svg"
+    img: "./icons/people6.svg"
   },
   {
     name: "Dr. Nalini Kaul (Mahaian)",
     profession: "Director, Mother & Child Hosoital",
     school: "Scientific Director, Ferticity Fertility Clinics India",
-    img: "/icons/people7.svg"
+    img: "./icons/people7.svg"
   },
 ];
 
