@@ -102,7 +102,7 @@ export default function Detail() {
 
       <div className="px-8">
         <CardName />
-        <div className="flex flex-col lg:flex-row justify-between mt-32 gap-10">
+        <div className="flex flex-col lg:flex-row justify-between mt-32 gap-28">
           <Dropdown data={data} />
           <CardSlider />
         </div>
