@@ -1,3 +1,5 @@
+"use client";
+
 import { listCourses } from "@/app/dummy";
 import Image from "next/image";
 import Link from "next/link";
