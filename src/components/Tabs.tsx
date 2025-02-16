@@ -1,16 +1,17 @@
 const tabsData = [
-    { value: "all", label: "All" },
-    { value: "introductory", label: "Introductory" },
-    { value: "advanced", label: "Advanced" },
-    { value: "population", label: "Population Spesific" },
+  { value: "all", label: "All" },
+  { value: "introductory", label: "Introductory" },
+  { value: "advanced", label: "Advanced" },
+  { value: "population", label: "Population Specific" },
 ];
 
-export default function Tabs(props: {
+export default function Tabs({
+  activeTab,
+  setActiveTab,
+}: {
   activeTab: string;
   setActiveTab: (params: string) => void;
 }) {
-  const { activeTab, setActiveTab } = props;
-
   return (
     <div>
       <div className="flex gap-4">

@@ -3,12 +3,12 @@ import { topics } from "@/app/dummy";
 export default function Steps() {
   return (
     <div>
-      <div className="text-sm font-bold mt-16 mb-10 pl-10">EXPLORE TOPICS</div>
-      {topics.map(({ name, view }, idx) => (
-        <div key={idx} className="flex items-center mb-3">
+      <h2 className="text-sm font-bold mt-16 mb-10 pl-10">EXPLORE TOPICS</h2>
+      {topics.map(({ name, view }) => (
+        <div key={name} className="flex items-center mb-3">
           <div className="flex items-center w-24">
-            <div className="flex-1 h-[1px] bg-[#ffc8aa]"></div>
-            <div className="w-14 h-14 bg-[#ffc8aa] rounded-full"></div>
+            <div className="flex-1 h-[1px] bg-[#ffc8aa]" />
+            <div className="w-14 h-14 bg-[#ffc8aa] rounded-full" />
           </div>
           <div className="font-serif text-4xl mx-2">{name}</div>
           <svg
@@ -17,7 +17,8 @@ export default function Steps() {
             viewBox="0 0 24 24"
             strokeWidth={2.2}
             stroke="currentColor"
-            className="size-4">
+            className="size-4"
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

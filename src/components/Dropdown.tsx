@@ -3,29 +3,29 @@
 import Image from "next/image";
 import { useState } from "react";
 
-export default function Dropdown(props: { data: { name: string } }) {
+export default function Dropdown(props: { data?: { name: string } }) {
   const { data } = props;
 
   const [lessons, setLessons] = useState([
     {
-      title: `What is ${data.name}?`,
+      title: `What is ${data?.name}?`,
       time: "6 min",
       subTitle: [
-        `Summary of ${data.name} Process`,
-        `Why do ${data.name}? Who does it help?`,
+        `Summary of ${data?.name} Process`,
+        `Why do ${data?.name}? Who does it help?`,
       ],
       active: false,
     },
     {
-      title: `The Steps and Decisions In ${data.name} Process?`,
+      title: `The Steps and Decisions In ${data?.name} Process?`,
       time: "1 hour",
-      subTitle: [`${data.name} Timeline & Funnel`],
+      subTitle: [`${data?.name} Timeline & Funnel`],
       active: false,
     },
     {
-      title: `${data.name} Success Rates?`,
+      title: `${data?.name} Success Rates?`,
       time: "15 min",
-      subTitle: [`Success Rates: How often Does ${data.name} Work`],
+      subTitle: [`Success Rates: How often Does ${data?.name} Work`],
       active: false,
     },
   ]);
